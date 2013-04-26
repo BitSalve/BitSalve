@@ -18,6 +18,19 @@
 		2280D687172900F200AAA674 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2280D686172900F200AAA674 /* Default@2x.png */; };
 		2280D689172900F200AAA674 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2280D688172900F200AAA674 /* Default-568h@2x.png */; };
 		2280D68C172900F200AAA674 /* BitSalve.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2280D68A172900F200AAA674 /* BitSalve.xcdatamodeld */; };
+		2280D6931729011C00AAA674 /* ClinicalStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2280D6921729011C00AAA674 /* ClinicalStoryboard.storyboard */; };
+		2280D6961729037700AAA674 /* BSClinicalHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2280D6951729037700AAA674 /* BSClinicalHomeViewController.m */; };
+		2280D69B1729160C00AAA674 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 2280D6991729160C00AAA674 /* Home.png */; };
+		2280D69C1729160C00AAA674 /* Home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2280D69A1729160C00AAA674 /* Home@2x.png */; };
+		2280D6A3172918B100AAA674 /* Patients.png in Resources */ = {isa = PBXBuildFile; fileRef = 2280D6A1172918B000AAA674 /* Patients.png */; };
+		2280D6A4172918B100AAA674 /* Patients@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2280D6A2172918B000AAA674 /* Patients@2x.png */; };
+		2280D6A717291CEB00AAA674 /* Reference.png in Resources */ = {isa = PBXBuildFile; fileRef = 2280D6A517291CEB00AAA674 /* Reference.png */; };
+		2280D6A817291CEB00AAA674 /* Reference@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2280D6A617291CEB00AAA674 /* Reference@2x.png */; };
+		2280D6AB17291F1C00AAA674 /* Patient.png in Resources */ = {isa = PBXBuildFile; fileRef = 2280D6A917291F1C00AAA674 /* Patient.png */; };
+		2280D6AC17291F1C00AAA674 /* Patient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2280D6AA17291F1C00AAA674 /* Patient@2x.png */; };
+		2280D6AF1729204600AAA674 /* BSPatientListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2280D6AE1729204600AAA674 /* BSPatientListViewController.m */; };
+		2280D6B11729F85400AAA674 /* BitSalveAppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2280D6B01729F85400AAA674 /* BitSalveAppIcon@2x.png */; };
+		2280D6B31729F85600AAA674 /* BitSalveAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2280D6B21729F85600AAA674 /* BitSalveAppIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +49,21 @@
 		2280D686172900F200AAA674 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2280D688172900F200AAA674 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2280D68B172900F200AAA674 /* BitSalve.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BitSalve.xcdatamodel; sourceTree = "<group>"; };
+		2280D6921729011C00AAA674 /* ClinicalStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ClinicalStoryboard.storyboard; path = ../ClinicalStoryboard.storyboard; sourceTree = "<group>"; };
+		2280D6941729037700AAA674 /* BSClinicalHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClinicalHomeViewController.h; sourceTree = "<group>"; };
+		2280D6951729037700AAA674 /* BSClinicalHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClinicalHomeViewController.m; sourceTree = "<group>"; };
+		2280D6991729160C00AAA674 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		2280D69A1729160C00AAA674 /* Home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home@2x.png"; sourceTree = "<group>"; };
+		2280D6A1172918B000AAA674 /* Patients.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Patients.png; sourceTree = "<group>"; };
+		2280D6A2172918B000AAA674 /* Patients@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Patients@2x.png"; sourceTree = "<group>"; };
+		2280D6A517291CEB00AAA674 /* Reference.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reference.png; sourceTree = "<group>"; };
+		2280D6A617291CEB00AAA674 /* Reference@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reference@2x.png"; sourceTree = "<group>"; };
+		2280D6A917291F1C00AAA674 /* Patient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Patient.png; sourceTree = "<group>"; };
+		2280D6AA17291F1C00AAA674 /* Patient@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Patient@2x.png"; sourceTree = "<group>"; };
+		2280D6AD1729204600AAA674 /* BSPatientListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPatientListViewController.h; sourceTree = "<group>"; };
+		2280D6AE1729204600AAA674 /* BSPatientListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPatientListViewController.m; sourceTree = "<group>"; };
+		2280D6B01729F85400AAA674 /* BitSalveAppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BitSalveAppIcon@2x.png"; sourceTree = "<group>"; };
+		2280D6B21729F85600AAA674 /* BitSalveAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BitSalveAppIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,8 @@
 		2280D664172900F100AAA674 = {
 			isa = PBXGroup;
 			children = (
+				2280D6B21729F85600AAA674 /* BitSalveAppIcon.png */,
+				2280D6B01729F85400AAA674 /* BitSalveAppIcon@2x.png */,
 				2280D678172900F200AAA674 /* BitSalve */,
 				2280D66F172900F200AAA674 /* Frameworks */,
 				2280D66E172900F200AAA674 /* Products */,
@@ -85,9 +115,14 @@
 			isa = PBXGroup;
 			children = (
 				2280D681172900F200AAA674 /* BSAppDelegate.h */,
+				2280D6921729011C00AAA674 /* ClinicalStoryboard.storyboard */,
 				2280D682172900F200AAA674 /* BSAppDelegate.m */,
 				2280D68A172900F200AAA674 /* BitSalve.xcdatamodeld */,
 				2280D679172900F200AAA674 /* Supporting Files */,
+				2280D6941729037700AAA674 /* BSClinicalHomeViewController.h */,
+				2280D6951729037700AAA674 /* BSClinicalHomeViewController.m */,
+				2280D6AD1729204600AAA674 /* BSPatientListViewController.h */,
+				2280D6AE1729204600AAA674 /* BSPatientListViewController.m */,
 			);
 			path = BitSalve;
 			sourceTree = "<group>";
@@ -95,11 +130,19 @@
 		2280D679172900F200AAA674 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2280D6A917291F1C00AAA674 /* Patient.png */,
+				2280D6AA17291F1C00AAA674 /* Patient@2x.png */,
 				2280D67A172900F200AAA674 /* BitSalve-Info.plist */,
 				2280D67B172900F200AAA674 /* InfoPlist.strings */,
 				2280D67E172900F200AAA674 /* main.m */,
+				2280D6A517291CEB00AAA674 /* Reference.png */,
+				2280D6A617291CEB00AAA674 /* Reference@2x.png */,
 				2280D680172900F200AAA674 /* BitSalve-Prefix.pch */,
+				2280D6A1172918B000AAA674 /* Patients.png */,
+				2280D6A2172918B000AAA674 /* Patients@2x.png */,
 				2280D684172900F200AAA674 /* Default.png */,
+				2280D6991729160C00AAA674 /* Home.png */,
+				2280D69A1729160C00AAA674 /* Home@2x.png */,
 				2280D686172900F200AAA674 /* Default@2x.png */,
 				2280D688172900F200AAA674 /* Default-568h@2x.png */,
 			);
@@ -162,6 +205,17 @@
 				2280D685172900F200AAA674 /* Default.png in Resources */,
 				2280D687172900F200AAA674 /* Default@2x.png in Resources */,
 				2280D689172900F200AAA674 /* Default-568h@2x.png in Resources */,
+				2280D6931729011C00AAA674 /* ClinicalStoryboard.storyboard in Resources */,
+				2280D69B1729160C00AAA674 /* Home.png in Resources */,
+				2280D69C1729160C00AAA674 /* Home@2x.png in Resources */,
+				2280D6A3172918B100AAA674 /* Patients.png in Resources */,
+				2280D6A4172918B100AAA674 /* Patients@2x.png in Resources */,
+				2280D6A717291CEB00AAA674 /* Reference.png in Resources */,
+				2280D6A817291CEB00AAA674 /* Reference@2x.png in Resources */,
+				2280D6AB17291F1C00AAA674 /* Patient.png in Resources */,
+				2280D6AC17291F1C00AAA674 /* Patient@2x.png in Resources */,
+				2280D6B11729F85400AAA674 /* BitSalveAppIcon@2x.png in Resources */,
+				2280D6B31729F85600AAA674 /* BitSalveAppIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +229,8 @@
 				2280D67F172900F200AAA674 /* main.m in Sources */,
 				2280D683172900F200AAA674 /* BSAppDelegate.m in Sources */,
 				2280D68C172900F200AAA674 /* BitSalve.xcdatamodeld in Sources */,
+				2280D6961729037700AAA674 /* BSClinicalHomeViewController.m in Sources */,
+				2280D6AF1729204600AAA674 /* BSPatientListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

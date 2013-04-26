@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OGr-We-pja">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller - Patients-->
+        <scene sceneID="9we-ab-RHJ">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="ce6-k4-dE5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Patients" image="Patients.png" id="WE5-93-2h7"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hAS-PG-ysC">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xgj-pT-6um">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="urP-h9-uyy" kind="relationship" relationship="rootViewController" id="ryS-XY-Zga"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="71F-aj-6mI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="394" y="-791"/>
+        </scene>
+        <!--Patient List View Controller - Patients-->
+        <scene sceneID="Lvo-Jo-Q5L">
+            <objects>
+                <viewController id="urP-h9-uyy" customClass="BSPatientListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n0G-lQ-boj">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Fih-WI-SlF">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="PatientListCell" textLabel="GSe-rl-BEV" detailTextLabel="TUI-0i-05c" imageView="quK-pe-zBU" style="IBUITableViewCellStyleSubtitle" id="3PI-VL-hjb">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSe-rl-BEV">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUI-0i-05c">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Patient.png" id="quK-pe-zBU">
+                                                    <rect key="frame" x="6" y="6" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="urP-h9-uyy" id="Kf9-BT-V3p"/>
+                                    <outlet property="delegate" destination="urP-h9-uyy" id="uBC-Jh-qFR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fih-WI-SlF" firstAttribute="top" secondItem="n0G-lQ-boj" secondAttribute="top" type="default" id="52L-rl-RuG"/>
+                            <constraint firstItem="Fih-WI-SlF" firstAttribute="trailing" secondItem="n0G-lQ-boj" secondAttribute="trailing" type="default" id="pFB-YM-U96"/>
+                            <constraint firstItem="Fih-WI-SlF" firstAttribute="bottom" secondItem="n0G-lQ-boj" secondAttribute="bottom" type="default" id="tsP-5H-n0r"/>
+                            <constraint firstItem="Fih-WI-SlF" firstAttribute="leading" secondItem="n0G-lQ-boj" secondAttribute="leading" type="default" id="ttE-uS-gWJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Patients" id="GBT-DA-QvI">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Umk-9g-LhA">
+                            <connections>
+                                <action selector="addPatient:" destination="urP-h9-uyy" id="ms1-dn-iT8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="Umk-9g-LhA" id="0wA-re-MHd"/>
+                        <outlet property="patientTableView" destination="Fih-WI-SlF" id="pI5-lQ-RRb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WE4-mS-uPw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="-791"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xye-5y-HJi">
+            <objects>
+                <viewController id="9Tc-nx-Pov" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="hYz-Sn-a2Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1gr-8E-sAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="388" y="543"/>
+        </scene>
+        <!--Table View Controller - Reference-->
+        <scene sceneID="J7U-6M-ZKb">
+            <objects>
+                <tableViewController id="t8b-ot-BdK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Reference" image="Reference.png" id="pKj-Zm-YEq"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8L-x4-2xY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="388" y="-135"/>
+        </scene>
+        <!--View Controller - Home-->
+        <scene sceneID="LIV-ta-oAm">
+            <objects>
+                <viewController id="76E-Nt-Nm2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6o3-FG-Z57">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home.png" id="LHH-Wi-Swz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wPj-HL-l4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="388" y="-1459"/>
+        </scene>
+        <!--Clinical Home View Controller-->
+        <scene sceneID="olM-Rt-b03">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="OGr-We-pja" customClass="BSClinicalHomeViewController" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="8XA-gw-SRX">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="76E-Nt-Nm2" kind="relationship" relationship="viewControllers" id="3nm-1a-1Pq"/>
+                        <segue destination="ce6-k4-dE5" kind="relationship" relationship="viewControllers" id="3kF-NI-15a"/>
+                        <segue destination="t8b-ot-BdK" kind="relationship" relationship="viewControllers" id="oFR-yv-iVz"/>
+                        <segue destination="9Tc-nx-Pov" kind="relationship" relationship="viewControllers" id="6Hi-yn-RIl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="riX-NV-3ek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="-284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home.png" width="30" height="30"/>
+        <image name="Patient.png" width="30" height="30"/>
+        <image name="Patients.png" width="30" height="30"/>
+        <image name="Reference.png" width="30" height="30"/>
+    </resources>
+    <classes>
+        <class className="BSClinicalHomeViewController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSClinicalHomeViewController.h"/>
+        </class>
+        <class className="BSPatientListViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSPatientListViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addPatient:"/>
+                <relationship kind="outlet" name="addButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="patientTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
