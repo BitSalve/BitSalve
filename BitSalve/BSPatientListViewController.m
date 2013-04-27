@@ -8,6 +8,9 @@
 
 #import "BSPatientListViewController.h"
 #import "BSAppDelegate.h"
+#import "BSPatientEditViewController.h"
+#import "BSPatientViewController.h"
+#import "Patient.h"
 
 @interface BSPatientListViewController ()
 @property (nonatomic, strong, readonly) NSFetchedResultsController *fetchedResultsController;
@@ -39,6 +42,12 @@
     }                                                                                            
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self.patientTableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -66,10 +75,13 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell. . .
-    NSManagedObject *aPatient = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    Patient *aPatient = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     cell.textLabel.text = [[NSString alloc] initWithFormat:@"%@ %@", [aPatient valueForKey:@"firstName"], [aPatient valueForKey:@"lastName"]];
-    cell.detailTextLabel.text = [[NSString alloc] initWithFormat:@"%@", [aPatient valueForKey:@"birthdate"]];
+    
+    // build the detail label as: <sex>, <age> years  ie: "Male, 27yrs"
+    NSString *detail = [[NSString alloc] initWithFormat:@"%@, %@ yrs", aPatient.sex, aPatient.age];
+    cell.detailTextLabel.text = detail;
 
     return cell;
 }
@@ -133,12 +145,15 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    NSManagedObject *selectedPatient = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    [self performSegueWithIdentifier:@"PatientSelectSegue" sender:selectedPatient];
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    // Navigation logic may go here. Create and push another view controller.
+    NSManagedObject *selectedPatient = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    [self performSegueWithIdentifier:@"PatientEditSegue" sender:selectedPatient];
 }
 
 #pragma mark - FetchedResultsController Property
@@ -228,7 +243,7 @@
     NSManagedObjectContext *managedObjectContext = [self.fetchedResultsController managedObjectContext];
     
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:managedObjectContext];
+    NSManagedObject *patient = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:managedObjectContext];
     
     NSError *error = nil;
     if (![managedObjectContext save:&error])
@@ -241,6 +256,7 @@
         [alert show];
     }
     
+    [self performSegueWithIdentifier:@"PatientEditSegue" sender:patient];
 }
 
 - (void) setEditing: (BOOL)editing animated:(BOOL)animated
@@ -250,6 +266,50 @@
     [self.patientTableView setEditing:editing animated:animated];
 }
 
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"PatientEditSegue"]) {
+        if ([sender isKindOfClass:[NSManagedObject class]]) {
+            BSPatientEditViewController *detailController = segue.destinationViewController;
+            detailController.patient = sender;
+        }
+        else {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Patient Detail Error", @"Hero Detail Error")
+                                                            message:NSLocalizedString(@"Error trying to show Hero detail", @"Error trying to show Hero detail")
+                                                           delegate:self
+                                                  cancelButtonTitle:NSLocalizedString(@"Aw, Nuts", @"Aw, Nuts")
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
+    }
+    else if([segue.identifier isEqualToString:@"PatientSelectSegue"])
+    {
+        if ([sender isKindOfClass:[NSManagedObject class]]) {
+            
+            // get both the navigation controller and the top item, which is the table view displaying the patient info
+            UINavigationController *navigationController = segue.destinationViewController;
+            BSPatientViewController *patientController = (BSPatientViewController*)navigationController.topViewController;
+            
+            // since the top navigation usually has no items, we create a done and add button here.
+            UIBarButtonItem *doneBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:patientController action:@selector(done)];
+            UIBarButtonItem *addBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:patientController action:@selector(addAction)];
+            UINavigationItem *initialNavItem = [UINavigationItem alloc];
+            [initialNavItem setLeftBarButtonItem: doneBtn];
+            [initialNavItem setRightBarButtonItem:addBtn];
+            [navigationController.navigationBar pushNavigationItem:initialNavItem animated:YES];
+            
+            // make sure the table view showing the patient has a copy of that patient
+            patientController.patient = sender;
+        }
+        else {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Patient Detail Error", @"Hero Detail Error")
+                                                            message:NSLocalizedString(@"Error trying to show Hero detail", @"Error trying to show Hero detail")
+                                                           delegate:self
+                                                  cancelButtonTitle:NSLocalizedString(@"Aw, Nuts", @"Aw, Nuts")
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
+    }
+}
 
 @end

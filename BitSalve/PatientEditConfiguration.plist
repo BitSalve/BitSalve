@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>sections</key>
+	<array>
+		<dict>
+			<key>rows</key>
+			<array>
+				<dict>
+					<key>class</key>
+					<string>BSCoreDataEditCell</string>
+					<key>label</key>
+					<string>First Name</string>
+					<key>key</key>
+					<string>firstName</string>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>BSCoreDataEditCell</string>
+					<key>label</key>
+					<string>Last Name</string>
+					<key>key</key>
+					<string>lastName</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>rows</key>
+			<array>
+				<dict>
+					<key>class</key>
+					<string>BSCoreDataDateCell</string>
+					<key>label</key>
+					<string>birthdate</string>
+					<key>key</key>
+					<string>Birthdate</string>
+				</dict>
+				<dict>
+					<key>values</key>
+					<array>
+						<string>Female</string>
+						<string>Male</string>
+					</array>
+					<key>class</key>
+					<string>BSCoreDataPickerCell</string>
+					<key>key</key>
+					<string>sex</string>
+					<key>label</key>
+					<string>Sex</string>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>BSCoreDataCell</string>
+					<key>key</key>
+					<string>age</string>
+					<key>label</key>
+					<string>Age</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -31,6 +31,18 @@
 		2280D6AF1729204600AAA674 /* BSPatientListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2280D6AE1729204600AAA674 /* BSPatientListViewController.m */; };
 		2280D6B11729F85400AAA674 /* BitSalveAppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2280D6B01729F85400AAA674 /* BitSalveAppIcon@2x.png */; };
 		2280D6B31729F85600AAA674 /* BitSalveAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2280D6B21729F85600AAA674 /* BitSalveAppIcon.png */; };
+		2280D6B6172AE1AE00AAA674 /* BSPatientEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2280D6B5172AE1AE00AAA674 /* BSPatientEditViewController.m */; };
+		2280D6B8172AE38600AAA674 /* PatientEditConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2280D6B7172AE38600AAA674 /* PatientEditConfiguration.plist */; };
+		228D6661172B622300CC8570 /* BSCoreDataEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D6660172B622300CC8570 /* BSCoreDataEditCell.m */; };
+		228D6664172B715300CC8570 /* BSCoreDataDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D6663172B715300CC8570 /* BSCoreDataDateCell.m */; };
+		228D6667172B73E000CC8570 /* BSCoreDataPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D6666172B73E000CC8570 /* BSCoreDataPickerCell.m */; };
+		228D666B172BA31600CC8570 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D666A172BA31600CC8570 /* Patient.m */; };
+		228D666E172BA31700CC8570 /* Attestor.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D666D172BA31700CC8570 /* Attestor.m */; };
+		228D6671172BA31700CC8570 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D6670172BA31700CC8570 /* Person.m */; };
+		228D6674172BB47B00CC8570 /* BSCoreDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D6673172BB47A00CC8570 /* BSCoreDataCell.m */; };
+		228D6676172BB77B00CC8570 /* CoreDataErrors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 228D6675172BB77B00CC8570 /* CoreDataErrors.plist */; };
+		228D6679172BB7B600CC8570 /* BSCoreDataError.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D6678172BB7B500CC8570 /* BSCoreDataError.m */; };
+		228D667D172BEA2F00CC8570 /* BSPatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D667C172BEA2F00CC8570 /* BSPatientViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +76,28 @@
 		2280D6AE1729204600AAA674 /* BSPatientListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPatientListViewController.m; sourceTree = "<group>"; };
 		2280D6B01729F85400AAA674 /* BitSalveAppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BitSalveAppIcon@2x.png"; sourceTree = "<group>"; };
 		2280D6B21729F85600AAA674 /* BitSalveAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BitSalveAppIcon.png; sourceTree = "<group>"; };
+		2280D6B4172AE1AE00AAA674 /* BSPatientEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPatientEditViewController.h; sourceTree = "<group>"; };
+		2280D6B5172AE1AE00AAA674 /* BSPatientEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPatientEditViewController.m; sourceTree = "<group>"; };
+		2280D6B7172AE38600AAA674 /* PatientEditConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PatientEditConfiguration.plist; sourceTree = "<group>"; };
+		228D665F172B622300CC8570 /* BSCoreDataEditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCoreDataEditCell.h; sourceTree = "<group>"; };
+		228D6660172B622300CC8570 /* BSCoreDataEditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCoreDataEditCell.m; sourceTree = "<group>"; };
+		228D6662172B715300CC8570 /* BSCoreDataDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCoreDataDateCell.h; sourceTree = "<group>"; };
+		228D6663172B715300CC8570 /* BSCoreDataDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCoreDataDateCell.m; sourceTree = "<group>"; };
+		228D6665172B73E000CC8570 /* BSCoreDataPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCoreDataPickerCell.h; sourceTree = "<group>"; };
+		228D6666172B73E000CC8570 /* BSCoreDataPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCoreDataPickerCell.m; sourceTree = "<group>"; };
+		228D6669172BA31600CC8570 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		228D666A172BA31600CC8570 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		228D666C172BA31700CC8570 /* Attestor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attestor.h; sourceTree = "<group>"; };
+		228D666D172BA31700CC8570 /* Attestor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attestor.m; sourceTree = "<group>"; };
+		228D666F172BA31700CC8570 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		228D6670172BA31700CC8570 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		228D6672172BB47A00CC8570 /* BSCoreDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = BSCoreDataCell.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
+		228D6673172BB47A00CC8570 /* BSCoreDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = BSCoreDataCell.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
+		228D6675172BB77B00CC8570 /* CoreDataErrors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CoreDataErrors.plist; sourceTree = "<group>"; };
+		228D6677172BB7B500CC8570 /* BSCoreDataError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCoreDataError.h; sourceTree = "<group>"; };
+		228D6678172BB7B500CC8570 /* BSCoreDataError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCoreDataError.m; sourceTree = "<group>"; };
+		228D667B172BEA2F00CC8570 /* BSPatientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPatientViewController.h; sourceTree = "<group>"; };
+		228D667C172BEA2F00CC8570 /* BSPatientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPatientViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +148,7 @@
 		2280D678172900F200AAA674 /* BitSalve */ = {
 			isa = PBXGroup;
 			children = (
+				228D6668172BA2F100CC8570 /* CustomManagedObjects */,
 				2280D681172900F200AAA674 /* BSAppDelegate.h */,
 				2280D6921729011C00AAA674 /* ClinicalStoryboard.storyboard */,
 				2280D682172900F200AAA674 /* BSAppDelegate.m */,
@@ -123,6 +158,20 @@
 				2280D6951729037700AAA674 /* BSClinicalHomeViewController.m */,
 				2280D6AD1729204600AAA674 /* BSPatientListViewController.h */,
 				2280D6AE1729204600AAA674 /* BSPatientListViewController.m */,
+				2280D6B4172AE1AE00AAA674 /* BSPatientEditViewController.h */,
+				2280D6B5172AE1AE00AAA674 /* BSPatientEditViewController.m */,
+				228D667B172BEA2F00CC8570 /* BSPatientViewController.h */,
+				228D667C172BEA2F00CC8570 /* BSPatientViewController.m */,
+				228D6672172BB47A00CC8570 /* BSCoreDataCell.h */,
+				228D6673172BB47A00CC8570 /* BSCoreDataCell.m */,
+				228D665F172B622300CC8570 /* BSCoreDataEditCell.h */,
+				228D6660172B622300CC8570 /* BSCoreDataEditCell.m */,
+				228D6662172B715300CC8570 /* BSCoreDataDateCell.h */,
+				228D6663172B715300CC8570 /* BSCoreDataDateCell.m */,
+				228D6665172B73E000CC8570 /* BSCoreDataPickerCell.h */,
+				228D6666172B73E000CC8570 /* BSCoreDataPickerCell.m */,
+				228D6677172BB7B500CC8570 /* BSCoreDataError.h */,
+				228D6678172BB7B500CC8570 /* BSCoreDataError.m */,
 			);
 			path = BitSalve;
 			sourceTree = "<group>";
@@ -130,6 +179,8 @@
 		2280D679172900F200AAA674 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2280D6B7172AE38600AAA674 /* PatientEditConfiguration.plist */,
+				228D6675172BB77B00CC8570 /* CoreDataErrors.plist */,
 				2280D6A917291F1C00AAA674 /* Patient.png */,
 				2280D6AA17291F1C00AAA674 /* Patient@2x.png */,
 				2280D67A172900F200AAA674 /* BitSalve-Info.plist */,
@@ -147,6 +198,19 @@
 				2280D688172900F200AAA674 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		228D6668172BA2F100CC8570 /* CustomManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				228D666F172BA31700CC8570 /* Person.h */,
+				228D6670172BA31700CC8570 /* Person.m */,
+				228D666C172BA31700CC8570 /* Attestor.h */,
+				228D666D172BA31700CC8570 /* Attestor.m */,
+				228D6669172BA31600CC8570 /* Patient.h */,
+				228D666A172BA31600CC8570 /* Patient.m */,
+			);
+			name = CustomManagedObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +280,8 @@
 				2280D6AC17291F1C00AAA674 /* Patient@2x.png in Resources */,
 				2280D6B11729F85400AAA674 /* BitSalveAppIcon@2x.png in Resources */,
 				2280D6B31729F85600AAA674 /* BitSalveAppIcon.png in Resources */,
+				2280D6B8172AE38600AAA674 /* PatientEditConfiguration.plist in Resources */,
+				228D6676172BB77B00CC8570 /* CoreDataErrors.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +297,16 @@
 				2280D68C172900F200AAA674 /* BitSalve.xcdatamodeld in Sources */,
 				2280D6961729037700AAA674 /* BSClinicalHomeViewController.m in Sources */,
 				2280D6AF1729204600AAA674 /* BSPatientListViewController.m in Sources */,
+				2280D6B6172AE1AE00AAA674 /* BSPatientEditViewController.m in Sources */,
+				228D6661172B622300CC8570 /* BSCoreDataEditCell.m in Sources */,
+				228D6664172B715300CC8570 /* BSCoreDataDateCell.m in Sources */,
+				228D6667172B73E000CC8570 /* BSCoreDataPickerCell.m in Sources */,
+				228D666B172BA31600CC8570 /* Patient.m in Sources */,
+				228D666E172BA31700CC8570 /* Attestor.m in Sources */,
+				228D6671172BA31700CC8570 /* Person.m in Sources */,
+				228D6674172BB47B00CC8570 /* BSCoreDataCell.m in Sources */,
+				228D6679172BB7B600CC8570 /* BSCoreDataError.m in Sources */,
+				228D667D172BEA2F00CC8570 /* BSPatientViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +421,7 @@
 				2280D691172900F200AAA674 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

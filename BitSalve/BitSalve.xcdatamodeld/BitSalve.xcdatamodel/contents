@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Attestor" parentEntity="Person" syncable="YES"/>
-    <entity name="Patient" parentEntity="Person" syncable="YES">
+    <entity name="Attestor" representedClassName="Attestor" parentEntity="Person" syncable="YES"/>
+    <entity name="Patient" representedClassName="Patient" parentEntity="Person" syncable="YES">
         <attribute name="patientID" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Person" isAbstract="YES" syncable="YES">
-        <attribute name="birthdate" optional="YES" attributeType="Date" defaultDateTimeInterval="388609200" defaultValueString="&quot;Now&quot;" syncable="YES"/>
-        <attribute name="firstName" optional="YES" attributeType="String" defaultValueString="John" syncable="YES"/>
-        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="lastName" optional="YES" attributeType="String" defaultValueString="Doe" syncable="YES"/>
+    <entity name="Person" representedClassName="Person" isAbstract="YES" syncable="YES">
+        <attribute name="age" optional="YES" transient="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="birthdate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateCreated" attributeType="Date" syncable="YES"/>
+        <attribute name="firstName" attributeType="String" minValueString="1" defaultValueString="John" syncable="YES"/>
+        <attribute name="lastName" attributeType="String" minValueString="1" defaultValueString="Doe" syncable="YES"/>
         <attribute name="middleName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nickname" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="prefix" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="suffix" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Person" positionX="151" positionY="-210" width="128" height="165"/>
-        <element name="Patient" positionX="27" positionY="39" width="128" height="60"/>
-        <element name="Attestor" positionX="259" positionY="36" width="128" height="45"/>
+        <element name="Attestor" positionX="259" positionY="36" width="128" height="43"/>
+        <element name="Patient" positionX="27" positionY="39" width="128" height="58"/>
+        <element name="Person" positionX="135" positionY="-315" width="128" height="193"/>
     </elements>
 </model>
