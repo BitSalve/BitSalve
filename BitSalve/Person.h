@@ -20,9 +20,9 @@
 @property (nonatomic, retain) NSString * lastName;
 @property (nonatomic, retain) NSString * middleName;
 @property (nonatomic, retain) NSString * nickname;
-@property (nonatomic, retain) NSString * prefix;
+@property (nonatomic, retain) NSString * namePrefix;
 @property (nonatomic, retain) NSString * sex;
-@property (nonatomic, retain) NSString * suffix;
+@property (nonatomic, retain) NSString * nameSuffix;
 @property (nonatomic, retain, readonly) NSNumber * age;
 
 @end

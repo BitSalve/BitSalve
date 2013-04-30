@@ -32,7 +32,7 @@ static NSDateFormatter *__dateFormatter = nil;
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
-        self.textField.clearButtonMode = UITextFieldViewModeNever;
+        self.textField.clearButtonMode = UITextFieldViewModeWhileEditing;
         self.datePicker = [[UIDatePicker alloc] initWithFrame:CGRectZero];
         self.datePicker.datePickerMode = UIDatePickerModeDate;
         [self.datePicker addTarget:self action:@selector(datePickerChanged:) forControlEvents:UIControlEventValueChanged];

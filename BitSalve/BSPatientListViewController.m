@@ -77,10 +77,13 @@
     // Configure the cell. . .
     Patient *aPatient = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
-    cell.textLabel.text = [[NSString alloc] initWithFormat:@"%@ %@", [aPatient valueForKey:@"firstName"], [aPatient valueForKey:@"lastName"]];
+    cell.textLabel.text = [[NSString alloc] initWithFormat:@"%@ %@ %@", [aPatient valueForKey:@"firstName"], aPatient.middleName ? aPatient.middleName : @"", [aPatient valueForKey:@"lastName"]];
     
     // build the detail label as: <sex>, <age> years  ie: "Male, 27yrs"
-    NSString *detail = [[NSString alloc] initWithFormat:@"%@, %@ yrs", aPatient.sex, aPatient.age];
+    NSString *sex = aPatient.sex ? aPatient.sex : @"";
+    NSString *age = aPatient.age ? [[NSString alloc] initWithFormat:@"%@ yrs", aPatient.age] : @"" ;
+    
+    NSString *detail = [[NSString alloc] initWithFormat:@"%@ %@", sex, age];
     cell.detailTextLabel.text = detail;
 
     return cell;

@@ -18,14 +18,13 @@
 @dynamic lastName;
 @dynamic middleName;
 @dynamic nickname;
-@dynamic prefix;
+@dynamic namePrefix;
 @dynamic sex;
-@dynamic suffix;
+@dynamic nameSuffix;
 @dynamic age;
 
 -(void)awakeFromInsert
 {
-    self.birthdate = [NSDate date];
     self.dateCreated = [NSDate date];
 }
 

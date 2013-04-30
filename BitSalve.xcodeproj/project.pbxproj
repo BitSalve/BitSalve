@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		226CE43D172CAAAA000495AD /* Delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 226CE43B172CAAAA000495AD /* Delete.png */; };
+		226CE43E172CAAAA000495AD /* Delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 226CE43C172CAAAA000495AD /* Delete@2x.png */; };
+		226CE445172CAB96000495AD /* More.png in Resources */ = {isa = PBXBuildFile; fileRef = 226CE443172CAB96000495AD /* More.png */; };
+		226CE446172CAB96000495AD /* More@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 226CE444172CAB96000495AD /* More@2x.png */; };
+		226CE449172CB150000495AD /* BSChooseActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226CE448172CB14F000495AD /* BSChooseActionViewController.m */; };
+		226CE44E172D28E3000495AD /* BSPatientTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226CE44D172D28E3000495AD /* BSPatientTabBarController.m */; };
+		226CE451172D298D000495AD /* BSPatientAssessmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226CE450172D298D000495AD /* BSPatientAssessmentsViewController.m */; };
+		226CE454172D2ADA000495AD /* BSPatientActionsNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226CE453172D2ADA000495AD /* BSPatientActionsNavigationViewController.m */; };
+		226CE457172D2C16000495AD /* BSPatientNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226CE456172D2C16000495AD /* BSPatientNotesViewController.m */; };
+		226CE492172D40AC000495AD /* BSPatientOverviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 226CE491172D40AC000495AD /* BSPatientOverviewCell.m */; };
+		226CE494172D41DE000495AD /* PatientOverviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226CE493172D41DE000495AD /* PatientOverviewCell.xib */; };
 		2280D671172900F200AAA674 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2280D670172900F200AAA674 /* UIKit.framework */; };
 		2280D673172900F200AAA674 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2280D672172900F200AAA674 /* Foundation.framework */; };
 		2280D675172900F200AAA674 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2280D674172900F200AAA674 /* CoreGraphics.framework */; };
@@ -43,9 +54,27 @@
 		228D6676172BB77B00CC8570 /* CoreDataErrors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 228D6675172BB77B00CC8570 /* CoreDataErrors.plist */; };
 		228D6679172BB7B600CC8570 /* BSCoreDataError.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D6678172BB7B500CC8570 /* BSCoreDataError.m */; };
 		228D667D172BEA2F00CC8570 /* BSPatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D667C172BEA2F00CC8570 /* BSPatientViewController.m */; };
+		228D6686172C932800CC8570 /* BSCoreDataCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D6685172C932800CC8570 /* BSCoreDataCollectionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		226CE43B172CAAAA000495AD /* Delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Delete.png; sourceTree = "<group>"; };
+		226CE43C172CAAAA000495AD /* Delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Delete@2x.png"; sourceTree = "<group>"; };
+		226CE443172CAB96000495AD /* More.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = More.png; sourceTree = "<group>"; };
+		226CE444172CAB96000495AD /* More@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "More@2x.png"; sourceTree = "<group>"; };
+		226CE447172CB14F000495AD /* BSChooseActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSChooseActionViewController.h; sourceTree = "<group>"; };
+		226CE448172CB14F000495AD /* BSChooseActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSChooseActionViewController.m; sourceTree = "<group>"; };
+		226CE44C172D28E2000495AD /* BSPatientTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPatientTabBarController.h; sourceTree = "<group>"; };
+		226CE44D172D28E3000495AD /* BSPatientTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPatientTabBarController.m; sourceTree = "<group>"; };
+		226CE44F172D298D000495AD /* BSPatientAssessmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPatientAssessmentsViewController.h; sourceTree = "<group>"; };
+		226CE450172D298D000495AD /* BSPatientAssessmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPatientAssessmentsViewController.m; sourceTree = "<group>"; };
+		226CE452172D2ADA000495AD /* BSPatientActionsNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPatientActionsNavigationViewController.h; sourceTree = "<group>"; };
+		226CE453172D2ADA000495AD /* BSPatientActionsNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPatientActionsNavigationViewController.m; sourceTree = "<group>"; };
+		226CE455172D2C16000495AD /* BSPatientNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPatientNotesViewController.h; sourceTree = "<group>"; };
+		226CE456172D2C16000495AD /* BSPatientNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPatientNotesViewController.m; sourceTree = "<group>"; };
+		226CE490172D40AC000495AD /* BSPatientOverviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPatientOverviewCell.h; sourceTree = "<group>"; };
+		226CE491172D40AC000495AD /* BSPatientOverviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPatientOverviewCell.m; sourceTree = "<group>"; };
+		226CE493172D41DE000495AD /* PatientOverviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientOverviewCell.xib; sourceTree = "<group>"; };
 		2280D66D172900F200AAA674 /* BitSalve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitSalve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2280D670172900F200AAA674 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2280D672172900F200AAA674 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,6 +127,8 @@
 		228D6678172BB7B500CC8570 /* BSCoreDataError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCoreDataError.m; sourceTree = "<group>"; };
 		228D667B172BEA2F00CC8570 /* BSPatientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPatientViewController.h; sourceTree = "<group>"; };
 		228D667C172BEA2F00CC8570 /* BSPatientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPatientViewController.m; sourceTree = "<group>"; };
+		228D6684172C932800CC8570 /* BSCoreDataCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCoreDataCollectionCell.h; sourceTree = "<group>"; };
+		228D6685172C932800CC8570 /* BSCoreDataCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCoreDataCollectionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,12 +179,15 @@
 		2280D678172900F200AAA674 /* BitSalve */ = {
 			isa = PBXGroup;
 			children = (
-				228D6668172BA2F100CC8570 /* CustomManagedObjects */,
 				2280D681172900F200AAA674 /* BSAppDelegate.h */,
-				2280D6921729011C00AAA674 /* ClinicalStoryboard.storyboard */,
 				2280D682172900F200AAA674 /* BSAppDelegate.m */,
-				2280D68A172900F200AAA674 /* BitSalve.xcdatamodeld */,
 				2280D679172900F200AAA674 /* Supporting Files */,
+				228D6683172C92CF00CC8570 /* Core Data Collection Cells */,
+				228D6682172C914A00CC8570 /* Core Data Table Cells */,
+				228D667E172C798E00CC8570 /* Property Lists */,
+				228D6668172BA2F100CC8570 /* CustomManagedObjects */,
+				2280D6921729011C00AAA674 /* ClinicalStoryboard.storyboard */,
+				2280D68A172900F200AAA674 /* BitSalve.xcdatamodeld */,
 				2280D6941729037700AAA674 /* BSClinicalHomeViewController.h */,
 				2280D6951729037700AAA674 /* BSClinicalHomeViewController.m */,
 				2280D6AD1729204600AAA674 /* BSPatientListViewController.h */,
@@ -162,16 +196,19 @@
 				2280D6B5172AE1AE00AAA674 /* BSPatientEditViewController.m */,
 				228D667B172BEA2F00CC8570 /* BSPatientViewController.h */,
 				228D667C172BEA2F00CC8570 /* BSPatientViewController.m */,
-				228D6672172BB47A00CC8570 /* BSCoreDataCell.h */,
-				228D6673172BB47A00CC8570 /* BSCoreDataCell.m */,
-				228D665F172B622300CC8570 /* BSCoreDataEditCell.h */,
-				228D6660172B622300CC8570 /* BSCoreDataEditCell.m */,
-				228D6662172B715300CC8570 /* BSCoreDataDateCell.h */,
-				228D6663172B715300CC8570 /* BSCoreDataDateCell.m */,
-				228D6665172B73E000CC8570 /* BSCoreDataPickerCell.h */,
-				228D6666172B73E000CC8570 /* BSCoreDataPickerCell.m */,
-				228D6677172BB7B500CC8570 /* BSCoreDataError.h */,
-				228D6678172BB7B500CC8570 /* BSCoreDataError.m */,
+				226CE447172CB14F000495AD /* BSChooseActionViewController.h */,
+				226CE448172CB14F000495AD /* BSChooseActionViewController.m */,
+				226CE44C172D28E2000495AD /* BSPatientTabBarController.h */,
+				226CE44D172D28E3000495AD /* BSPatientTabBarController.m */,
+				226CE44F172D298D000495AD /* BSPatientAssessmentsViewController.h */,
+				226CE450172D298D000495AD /* BSPatientAssessmentsViewController.m */,
+				226CE452172D2ADA000495AD /* BSPatientActionsNavigationViewController.h */,
+				226CE453172D2ADA000495AD /* BSPatientActionsNavigationViewController.m */,
+				226CE455172D2C16000495AD /* BSPatientNotesViewController.h */,
+				226CE456172D2C16000495AD /* BSPatientNotesViewController.m */,
+				226CE490172D40AC000495AD /* BSPatientOverviewCell.h */,
+				226CE491172D40AC000495AD /* BSPatientOverviewCell.m */,
+				226CE493172D41DE000495AD /* PatientOverviewCell.xib */,
 			);
 			path = BitSalve;
 			sourceTree = "<group>";
@@ -179,7 +216,10 @@
 		2280D679172900F200AAA674 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2280D6B7172AE38600AAA674 /* PatientEditConfiguration.plist */,
+				226CE43B172CAAAA000495AD /* Delete.png */,
+				226CE43C172CAAAA000495AD /* Delete@2x.png */,
+				226CE443172CAB96000495AD /* More.png */,
+				226CE444172CAB96000495AD /* More@2x.png */,
 				228D6675172BB77B00CC8570 /* CoreDataErrors.plist */,
 				2280D6A917291F1C00AAA674 /* Patient.png */,
 				2280D6AA17291F1C00AAA674 /* Patient@2x.png */,
@@ -211,6 +251,40 @@
 				228D666A172BA31600CC8570 /* Patient.m */,
 			);
 			name = CustomManagedObjects;
+			sourceTree = "<group>";
+		};
+		228D667E172C798E00CC8570 /* Property Lists */ = {
+			isa = PBXGroup;
+			children = (
+				2280D6B7172AE38600AAA674 /* PatientEditConfiguration.plist */,
+			);
+			name = "Property Lists";
+			sourceTree = "<group>";
+		};
+		228D6682172C914A00CC8570 /* Core Data Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				228D6672172BB47A00CC8570 /* BSCoreDataCell.h */,
+				228D6673172BB47A00CC8570 /* BSCoreDataCell.m */,
+				228D665F172B622300CC8570 /* BSCoreDataEditCell.h */,
+				228D6660172B622300CC8570 /* BSCoreDataEditCell.m */,
+				228D6662172B715300CC8570 /* BSCoreDataDateCell.h */,
+				228D6663172B715300CC8570 /* BSCoreDataDateCell.m */,
+				228D6665172B73E000CC8570 /* BSCoreDataPickerCell.h */,
+				228D6666172B73E000CC8570 /* BSCoreDataPickerCell.m */,
+				228D6677172BB7B500CC8570 /* BSCoreDataError.h */,
+				228D6678172BB7B500CC8570 /* BSCoreDataError.m */,
+			);
+			name = "Core Data Table Cells";
+			sourceTree = "<group>";
+		};
+		228D6683172C92CF00CC8570 /* Core Data Collection Cells */ = {
+			isa = PBXGroup;
+			children = (
+				228D6684172C932800CC8570 /* BSCoreDataCollectionCell.h */,
+				228D6685172C932800CC8570 /* BSCoreDataCollectionCell.m */,
+			);
+			name = "Core Data Collection Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +356,11 @@
 				2280D6B31729F85600AAA674 /* BitSalveAppIcon.png in Resources */,
 				2280D6B8172AE38600AAA674 /* PatientEditConfiguration.plist in Resources */,
 				228D6676172BB77B00CC8570 /* CoreDataErrors.plist in Resources */,
+				226CE43D172CAAAA000495AD /* Delete.png in Resources */,
+				226CE43E172CAAAA000495AD /* Delete@2x.png in Resources */,
+				226CE445172CAB96000495AD /* More.png in Resources */,
+				226CE446172CAB96000495AD /* More@2x.png in Resources */,
+				226CE494172D41DE000495AD /* PatientOverviewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +386,13 @@
 				228D6674172BB47B00CC8570 /* BSCoreDataCell.m in Sources */,
 				228D6679172BB7B600CC8570 /* BSCoreDataError.m in Sources */,
 				228D667D172BEA2F00CC8570 /* BSPatientViewController.m in Sources */,
+				228D6686172C932800CC8570 /* BSCoreDataCollectionCell.m in Sources */,
+				226CE449172CB150000495AD /* BSChooseActionViewController.m in Sources */,
+				226CE44E172D28E3000495AD /* BSPatientTabBarController.m in Sources */,
+				226CE451172D298D000495AD /* BSPatientAssessmentsViewController.m in Sources */,
+				226CE454172D2ADA000495AD /* BSPatientActionsNavigationViewController.m in Sources */,
+				226CE457172D2C16000495AD /* BSPatientNotesViewController.m in Sources */,
+				226CE492172D40AC000495AD /* BSPatientOverviewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

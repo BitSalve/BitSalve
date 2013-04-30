@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Patient.h"
 
-@interface BSPatientViewController : UITableViewController
+@interface BSPatientViewController : UIViewController <UITableViewDelegate>
 
-@property (strong, nonatomic) NSManagedObject *patient;
+@property (strong, nonatomic) Patient *patient;
+@property (strong, nonatomic) IBOutlet UILabel *patientNameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *patientInfoLabel;
+@property (strong, nonatomic) IBOutlet UILabel *patientIDLabel;
+
+@property NSString *selectedActionType;
 
 @end
