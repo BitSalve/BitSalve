@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Action" syncable="YES">
-        <attribute name="dateOfAction" attributeType="Date" defaultDateTimeInterval="389300400" defaultValueString="&quot;Now&quot;" syncable="YES"/>
+        <attribute name="dateOfAction" attributeType="Date" defaultDateTimeInterval="389386800" defaultValueString="&quot;Now&quot;" syncable="YES"/>
     </entity>
     <entity name="Assessment" parentEntity="Action" syncable="YES"/>
     <entity name="Attestor" representedClassName="Attestor" parentEntity="Person" syncable="YES"/>
-    <entity name="BradenRiskScore" parentEntity="Intervention" syncable="YES"/>
-    <entity name="Condition" parentEntity="Intervention" syncable="YES"/>
-    <entity name="Entity" syncable="YES"/>
+    <entity name="BradenRiskScore" parentEntity="Assessment" syncable="YES"/>
+    <entity name="Condition" parentEntity="Assessment" syncable="YES"/>
+    <entity name="Education" parentEntity="Intervention" syncable="YES"/>
+    <entity name="Entity" syncable="YES">
+        <attribute name="dateCreated" attributeType="Date" syncable="YES"/>
+    </entity>
     <entity name="Intervention" parentEntity="Action" syncable="YES"/>
-    <entity name="MedicalDevice" parentEntity="Intervention" syncable="YES"/>
-    <entity name="Medication" parentEntity="Intervention" syncable="YES"/>
+    <entity name="Machine" parentEntity="Entity" syncable="YES">
+        <attribute name="machineType" attributeType="String" minValueString="1" syncable="YES"/>
+    </entity>
+    <entity name="MedicalDevice" parentEntity="Assessment" syncable="YES"/>
+    <entity name="Medication" parentEntity="Assessment" syncable="YES"/>
+    <entity name="MoistureManagement" parentEntity="Intervention" syncable="YES"/>
     <entity name="Note" parentEntity="Action" syncable="YES"/>
-    <entity name="NutritionStatus" parentEntity="Intervention" syncable="YES"/>
+    <entity name="NutritionManagement" parentEntity="Intervention" syncable="YES"/>
+    <entity name="NutritionStatus" parentEntity="Assessment" syncable="YES"/>
     <entity name="Patient" representedClassName="Patient" parentEntity="Person" syncable="YES">
         <attribute name="patientID" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Person" representedClassName="Person" isAbstract="YES" syncable="YES">
+    <entity name="Person" representedClassName="Person" isAbstract="YES" parentEntity="Entity" syncable="YES">
         <attribute name="age" optional="YES" transient="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="birthdate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="dateCreated" attributeType="Date" syncable="YES"/>
@@ -28,16 +36,18 @@
         <attribute name="nickname" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="PressureUlcer" parentEntity="Intervention" syncable="YES"/>
-    <entity name="SkinInspection" parentEntity="Intervention" syncable="YES"/>
+    <entity name="PressureRedistribution" parentEntity="Intervention" syncable="YES"/>
+    <entity name="PressureUlcer" parentEntity="Assessment" syncable="YES"/>
+    <entity name="SkinInspection" parentEntity="Assessment" syncable="YES"/>
+    <entity name="SkinProtection" parentEntity="Intervention" syncable="YES"/>
     <elements>
         <element name="Action" positionX="-477" positionY="-297" width="128" height="58"/>
-        <element name="Assessment" positionX="-243" positionY="-135" width="128" height="43"/>
+        <element name="Intervention" positionX="-243" positionY="-135" width="128" height="43"/>
         <element name="Attestor" positionX="259" positionY="36" width="128" height="43"/>
         <element name="BradenRiskScore" positionX="-470" positionY="9" width="128" height="43"/>
         <element name="Condition" positionX="-470" positionY="297" width="128" height="43"/>
-        <element name="Entity" positionX="-216" positionY="-45" width="128" height="45"/>
-        <element name="Intervention" positionX="-486" positionY="-135" width="128" height="43"/>
+        <element name="Education" positionX="-216" positionY="-45" width="128" height="43"/>
+        <element name="Assessment" positionX="-486" positionY="-135" width="128" height="43"/>
         <element name="MedicalDevice" positionX="-470" positionY="189" width="128" height="43"/>
         <element name="Medication" positionX="-470" positionY="243" width="128" height="43"/>
         <element name="Note" positionX="-729" positionY="-135" width="128" height="43"/>
@@ -46,5 +56,11 @@
         <element name="Person" positionX="135" positionY="-315" width="128" height="193"/>
         <element name="PressureUlcer" positionX="-470" positionY="-54" width="128" height="43"/>
         <element name="SkinInspection" positionX="-470" positionY="65" width="128" height="43"/>
+        <element name="PressureRedistribution" positionX="-216" positionY="18" width="128" height="43"/>
+        <element name="SkinProtection" positionX="-216" positionY="81" width="128" height="43"/>
+        <element name="MoistureManagement" positionX="-218" positionY="144" width="128" height="43"/>
+        <element name="NutritionManagement" positionX="-218" positionY="207" width="128" height="43"/>
+        <element name="Entity" positionX="-117" positionY="-306" width="128" height="58"/>
+        <element name="Machine" positionX="-27" positionY="-144" width="128" height="58"/>
     </elements>
 </model>
