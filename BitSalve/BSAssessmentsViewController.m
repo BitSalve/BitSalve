@@ -1,18 +1,19 @@
 //
-//  BSChooseActionViewController.m
+//  BSAssessmentsViewController.m
 //  BitSalve
 //
-//  Created by Mike Bylund on 4/27/13.
+//  Created by Mike Bylund on 5/4/13.
 //  Copyright (c) 2013 BitSalve. All rights reserved.
 //
 
-#import "BSChooseActionViewController.h"
+#import "BSAssessmentsViewController.h"
+#import "BSPatientTabBarController.h"
 
-@interface BSChooseActionViewController ()
+@interface BSAssessmentsViewController ()
 
 @end
 
-@implementation BSChooseActionViewController
+@implementation BSAssessmentsViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -39,7 +40,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-/*
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -54,8 +55,8 @@
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 0;
-}*/
-/*
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -64,7 +65,7 @@
     // Configure the cell...
     
     return cell;
-}*/
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -109,9 +110,26 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    self.patientViewController.selectedActionType = [indexPath description];
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     */
+}
+
+#pragma mark - Instance Methods
+
+-(IBAction)doneButtonPressed:(id)sender
+{
+    BSPatientTabBarController *parentController =  (BSPatientTabBarController*)self.parentViewController;
+    [parentController dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(IBAction)addButtonPressed:(id)sender
+{
+    NSLog(@"Add Button Pressed");
 }
 
 @end

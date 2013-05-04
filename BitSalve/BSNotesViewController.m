@@ -1,18 +1,18 @@
 //
-//  BSPatientAssessmentsViewController.m
+//  BSNotesViewController.m
 //  BitSalve
 //
-//  Created by Mike Bylund on 4/28/13.
+//  Created by Mike Bylund on 5/4/13.
 //  Copyright (c) 2013 BitSalve. All rights reserved.
 //
 
-#import "BSPatientAssessmentsViewController.h"
+#import "BSNotesViewController.h"
 
-@interface BSPatientAssessmentsViewController ()
+@interface BSNotesViewController ()
 
 @end
 
-@implementation BSPatientAssessmentsViewController
+@implementation BSNotesViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

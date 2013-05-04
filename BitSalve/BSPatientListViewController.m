@@ -9,7 +9,6 @@
 #import "BSPatientListViewController.h"
 #import "BSAppDelegate.h"
 #import "BSPatientEditViewController.h"
-#import "BSPatientViewController.h"
 #import "Patient.h"
 
 @interface BSPatientListViewController ()
@@ -273,6 +272,8 @@
 {
     if ([segue.identifier isEqualToString:@"PatientEditSegue"]) {
         if ([sender isKindOfClass:[NSManagedObject class]]) {
+            
+            
             BSPatientEditViewController *detailController = segue.destinationViewController;
             detailController.patient = sender;
         }
@@ -290,23 +291,13 @@
         if ([sender isKindOfClass:[NSManagedObject class]]) {
             
             // get both the navigation controller and the top item, which is the table view displaying the patient info
-            UINavigationController *navigationController = segue.destinationViewController;
-            BSPatientViewController *patientController = (BSPatientViewController*)navigationController.topViewController;
-            
-            // since the top navigation usually has no items, we create a done and add button here.
-            UIBarButtonItem *doneBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:patientController action:@selector(done)];
-            UIBarButtonItem *addBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:patientController action:@selector(addAction)];
-            UINavigationItem *initialNavItem = [UINavigationItem alloc];
-            [initialNavItem setLeftBarButtonItem: doneBtn];
-            [initialNavItem setRightBarButtonItem:addBtn];
-            [navigationController.navigationBar pushNavigationItem:initialNavItem animated:YES];
-            
-            // make sure the table view showing the patient has a copy of that patient
-            patientController.patient = sender;
+            BSPatientTabBarController *navigationController = segue.destinationViewController;
+            navigationController.patient = sender;
         }
         else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Patient Detail Error", @"Hero Detail Error")
-                                                            message:NSLocalizedString(@"Error trying to show Hero detail", @"Error trying to show Hero detail")
+                                                            //message:NSLocalizedString(@"Error trying to show Hero detail", @"Error trying to show Hero detail")
+                                                            message: [[NSString alloc] initWithFormat:@"%@", [[sender class] description]]
                                                            delegate:self
                                                   cancelButtonTitle:NSLocalizedString(@"Aw, Nuts", @"Aw, Nuts")
                                                   otherButtonTitles:nil];

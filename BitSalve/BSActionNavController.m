@@ -1,18 +1,18 @@
 //
-//  BSPatientActionsNavigationViewController.m
+//  BSActionNavController.m
 //  BitSalve
 //
-//  Created by Mike Bylund on 4/28/13.
+//  Created by Mike Bylund on 5/4/13.
 //  Copyright (c) 2013 BitSalve. All rights reserved.
 //
 
-#import "BSPatientActionsNavigationViewController.h"
+#import "BSActionNavController.h"
 
-@interface BSPatientActionsNavigationViewController ()
+@interface BSActionNavController ()
 
 @end
 
-@implementation BSPatientActionsNavigationViewController
+@implementation BSActionNavController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

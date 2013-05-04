@@ -7,7 +7,6 @@
 //
 
 #import "BSPatientEditViewController.h"
-#import "BSPatientViewController.h"
 #import "BSCoreDataEditCell.h"
 
 @interface BSPatientEditViewController ()

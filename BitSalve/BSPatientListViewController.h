@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BSPatientTabBarController.h"
 
 @interface BSPatientListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate, UIAlertViewDelegate>
 
